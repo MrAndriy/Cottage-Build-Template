@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cottage Building Website Template</title>
+    <link rel="icon" type="image/png" href="./images/z.png" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__container">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img src="./images/logo1.svg" alt="logo" />
+          </a>
+          <div class="nav__logo-burger burger">
+            <span class="line line-main"></span>
+            <span class="line line-split"></span>
+          </div>
+        </div>
+        <div class="nav__wrapper">
+          <ul class="nav__pages">
+            <li><a class="navigation__link" href="#about-us">About us</a></li>
+            <li><a class="navigation__link" href="#services">Services</a></li>
+            <li><a class="navigation__link" href="#cottages">Cottages</a></li>
+            <li>
+              <a class="navigation__link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="navigation__link" href="#contacts">Contacts</a></li>
+          </ul>
+
+          <div class="nav__contact">
+            <a href="tel:+12345678900"
+              ><span class="success">CALL US</span> +1 (234) 567 89 00</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header__container">
+        <div class="header__content">
+          <h1><span class="success">ZEN</span> Cottages</h1>
+          <p>We can build your dream home.</p>
+          <button
+            class="btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Request a call
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="about-us" class="about-us__container">
+      <div class="about-us__expirience">
+        <div>
+          <h1 class="success">20</h1>
+        </div>
+        <div>
+          <p>years of</p>
+          <p>professional</p>
+          <p>expirience</p>
+        </div>
+      </div>
+      <div class="about-us__info">
+        <p>
+          <span class="success">ZEN Cottages</span> were founded by architect
+          Andrew Shimmer and his wife Carol. They wanted to create
+          classically-designed, efficient, and prefabricated structures that
+          could be easily moved, contracted, expanded, and sold while
+          maintaining both integrity and aesthetics.
+        </p>
+        <p>
+          The company respects the natural environment and deeply cares about
+          it. Therefore, we do our best to use building constructions and
+          delivery systems that are flexible and have minimal impact on the land
+          they occupy.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services__container">
+      <div class="services__type">
+        <article class="service">
+          <img src="./images/consulting.png" alt="" />
+          <h3>Consulting</h3>
+          <p>
+            Do your requirements truly match your needs and your budget? The
+            pre-construction planning phase helps you figure this out and come
+            up with adjustments if necessary, making your dreams and goals
+            achievable.
+          </p>
+        </article>
+
+        <article class="service">
+          <img src="./images/restoration.png" alt="" />
+          <h3>Restoration</h3>
+          <p>
+            Any home could suffer from things affecting its integrity or
+            aesthetics. Our experts can help you deal with those things as well.
+            Contact us for professional restoration services with the best
+            design practices in mind.
+          </p>
+        </article>
+
+        <article class="service">
+          <img src="./images/newHomConsulting.png" alt="" />
+          <h3>New home construction</h3>
+          <p>
+            Whether you need a home or a place to spend your vacations in, we
+            can help you. We offer diverse and flexible solutions along with
+            professional suggestions to meet and then exceed all your
+            expectations.
+          </p>
+        </article>
+
+        <article class="service">
+          <img src="./images/Design.png" alt="" />
+          <h3>Interior design</h3>
+          <p>
+            A new home is always a new lifestyle. Our designers will offer you
+            beautiful and ergonomic solutions to fill your new home with comfort
+            and coziness. We will show you a design project and supervise all
+            the works.
+          </p>
+        </article>
+      </div>
+      <div class="services__info">
+        <div class="services__info-building">
+          <h2>
+            We've brought the construction of our cottages to perfection due to
+            our great expertise.
+          </h2>
+
+          <article>
+            <p><span class="success">01. </span>HIGH-QUALITY MATERIALS</p>
+            <p>
+              All the materials we use are 100% safe for humans and are
+              considered eco.
+            </p>
+          </article>
+
+          <article>
+            <p><span class="success">02. </span>HIGH-LEVEL EXPERTS</p>
+            <p>
+              Our team consists of designers, architects, and constructors with
+              5+ years of experience.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="services-background"></div>
+    </section>
+
+    <section id="cottages" class="cottages__container">
+      <div class="cottages__header">
+        <h2>
+          Select your future home from the
+          <span class="success">available cottages:</span>
+        </h2>
+        <p>
+          Below are the most popular models of our cottages available right now.
+          You can order them by contacting our manager or filling out the form
+          on our website.
+        </p>
+      </div>
+
+      <article
+        class="cottage swiper mySwiper"
+        style="--swiper-navigation-color: #fff; --swiper-navigation-size: 30px;"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/cottages/mamoth.png" />
+            <span class="success"><i class="bi bi-house"></i> MAMMOTH</span>
+            <span><i class="bi bi-clock success"></i> 60-90 Days</span>
+            <span><i class="bi bi-currency-dollar success"></i> $30 000</span>
+            <p>
+              The Mammoth cottage is designed to accommodate up to 4 people and
+              is suitable for permanent living. Mammoth has full kitchen and
+              bathroom, office workspace, bottom floor sleeping area, and dual
+              lofts.
+            </p>
+            <button class="btn-primary">
+              Choose cottage <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/cottages/alphine.png" />
+            <span class="success"><i class="bi bi-house"></i> ALPINE</span>
+
+            <span><i class="bi bi-clock success"></i> 60-90 Days</span>
+            <span><i class="bi bi-currency-dollar success"></i> $30 000</span>
+            <p>
+              Alpine is our most economical model, specially created for
+              seasoned travelers. The cottage is built on a custom lightweight
+              trailer to be handled on the roads with is. It is efficient,
+              compact, and ready to go the distance.
+            </p>
+            <button class="btn-primary">
+              Choose cottage <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/cottages/alice.png" />
+            <span class="success"><i class="bi bi-house"></i> ALICE</span>
+
+            <span><i class="bi bi-clock success"></i> 60-90 Days</span>
+            <span><i class="bi bi-currency-dollar success"></i> $30 000</span>
+            <p>
+              This cottage is made of steel and glass for those who like the
+              modern style, futuristic design, and lots of air and space in
+              their homes. The cottage is perfect for permanent living for 3-5
+              persons.
+            </p>
+            <button class="btn-primary">
+              Choose cottage <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/cottages/shast.png" />
+            <span class="success"><i class="bi bi-house"></i> SHAST</span>
+            <span><i class="bi bi-clock success"></i> 60-90 Days</span>
+            <span><i class="bi bi-currency-dollar success"></i> $50 000</span>
+            <p>
+              Living in a tiny home is fun and practical when it's Shast. This
+              cottage is designed both for a part-time and permanent living and
+              can accommodate up to 3 people comfortably.
+            </p>
+            <button class="btn-primary">
+              Choose cottage <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </article>
+    </section>
+
+    <section class="consultation__container">
+      <div class="consultation__title">
+        <h3>Schedule a <span class="success">consultation</span></h3>
+        <p>
+          Press the button to have a pre-construction consultation with our
+          experts!
+        </p>
+        <button
+          class="btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Schedule a concultation
+        </button>
+      </div>
+
+      <div class="consultation__construction">
+        <div class="consultation__construction-header">
+          <h3>
+            We follow our special
+            <span class="success">construction process:</span>
+          </h3>
+          <div class="consultation__construction-header-image">
+            <img
+              src="./images/consultation/consultation-img.png"
+              alt="cottage"
+            />
+            <p>
+              Before starting the construction of your future home, we create a
+              detailed design project.
+              <br />
+              <span class="success"
+                >Get it for free <i class="bi bi-arrow-right"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="consultation__construction-body">
+          <article>
+            <h3><span class="success">01.</span> Figuring out your needs</h3>
+            <p>
+              We schedule a one-on-one appointment to help understand what you
+              want to build. We have different ready-made projects of cottages.
+            </p>
+          </article>
+
+          <article>
+            <h3>
+              <span class="success">02.</span> Designing your dream cottage
+            </h3>
+            <p>
+              Once we've figured out the requirements, we move on to the design
+              process, creating preliminary drawings, home and build order
+              drawings, and so on.
+            </p>
+          </article>
+
+          <article>
+            <h3>
+              <span class="success">03.</span> Moving on to the construction
+            </h3>
+            <p>
+              When everything is designed and approved by you, the construction
+              starts. We have a dedicated team of experienced constructors and
+              engineers.
+            </p>
+          </article>
+
+          <article>
+            <h3><span class="success">04.</span> Checking the progress</h3>
+            <p>
+              We invite you to take a look at your future cottage and to suggest
+              any changes and improvements that could be made at that stage of
+              the process.
+            </p>
+          </article>
+
+          <article>
+            <h3><span class="success">05.</span> Adding final touches</h3>
+            <p>
+              We make final improvements and add finishing touches to give your
+              cottage a more refined look. The final version of your cottage
+              will look fantastic!
+            </p>
+          </article>
+
+          <article>
+            <h3><span class="success">06.</span> Giving you the keys</h3>
+            <p>
+              When we finish, you check the work once again and receive the keys
+              to your brand new dream home! We congratulate you with your new
+              place or residence!
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team team__container">
+      <div class="team__header">
+        <h3>
+          We are happy to present you
+          <span class="success"> our dedicated team:</span>
+        </h3>
+        <div class="team__header-description">
+          <p>
+            We are constantly in search of great architects, designers, and
+            engineers. If that's you, get in touch!
+          </p>
+          <span class="success">Open vacancies →</span>
+        </div>
+      </div>
+      <div class="team__body">
+        <article>
+          <picture>
+            <img src="./images/consultation/team1.png" alt="team_member" />
+          </picture>
+          <h3 class="success">Andrew Sommer</h3>
+          <p><small>CEO</small></p>
+          <p>
+            Andrew is the founder of our company and a famous architect with 10+
+            years of experience and 100+ implemented projects.
+          </p>
+        </article>
+
+        <article>
+          <picture>
+            <img src="./images/consultation/team2.png" alt="team_member" />
+          </picture>
+          <h3 class="success">Tim Maisner</h3>
+          <p><small>Chief architect</small></p>
+          <p>
+            Tim is responsible for the development of new models of our
+            ready-made cottages that you can order right now.
+          </p>
+        </article>
+
+        <article>
+          <picture>
+            <img src="./images/consultation/team3.png" alt="team_member" />
+          </picture>
+          <h3 class="success">Jessica Audern</h3>
+          <p><small>interior designer</small></p>
+          <p>
+            Jessica is our chief designer and works on the future interior of
+            your home to make it comfortable and stylish.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="form form__container">
+      <div class="form__body">
+        <div class="form__body-info">
+          <h3>Request <span class="success">free consultation</span></h3>
+          <p>
+            If you have any questions, enter your phone below so we could get in
+            touch with you as soon as possible.
+          </p>
+        </div>
+        <form
+          class="my-form"
+          action="https://formspree.io/f/mjvldoer"
+          method="POST"
+        >
+          <input type="tel" name="tel" id="tel" placeholder="Phone" required />
+          <button class="btn-primary" id="my-form-button">Send</button>
+          <p class="my-form-status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="choose_us choose_us__container">
+      <div class="choose_us__header">
+        <h2>
+          Haven`t you decided yet to <span class="success">choose us?</span>
+        </h2>
+        <p>
+          <span>ZEN Cottages</span> is different from other design bureaus and
+          construction companies by its approach to each project and great
+          attention to every detail.
+        </p>
+      </div>
+
+      <div class="choose_us__body">
+        <article class="card">
+          <div class="title-img">
+            <span>
+              <img src="./images/svg/team.svg" alt="" />
+            </span>
+          </div>
+          <div class="title">
+            <p>
+              Experienced team
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              Our team of experts will work hard to create a dream home for you.
+              Each of our employees has vast experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="title-img">
+            <span>
+              <img src="./images/svg/quality.svg" alt="" />
+            </span>
+          </div>
+          <div class="title">
+            <p>
+              Quality materials
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              We use only high-quality materials and tools in the construction
+              process. The cottages are 100% safe.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="title-img">
+            <span>
+              <img src="./images/svg/satisfaction.svg" alt="" />
+            </span>
+          </div>
+          <div class="title">
+            <p>
+              Satisfaction guaranteed
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              Your comfort and safety are guaranteed! You'll get your payment
+              back if you aren't satisfied.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="title-img">
+            <span>
+              <img src="./images/svg/variety.svg" alt="" />
+            </span>
+          </div>
+          <div class="title">
+            <p>
+              Variety of options
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              Design your own cottage or pick one from the variety of ready-made
+              models we have designed for our clients.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="title-img">
+            <span>
+              <img src="./images/svg/individual.svg" alt="" />
+            </span>
+          </div>
+          <div class="title">
+            <p>
+              Individual approach
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              We listen to your requests and offer personalized options and
+              suggestions just for you.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="title-img">
+            <span>
+              <img src="./images/svg/dreams.svg" alt="" />
+            </span>
+          </div>
+          <div class="title">
+            <p>
+              Dreams come true
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              Comfort, stability, and great aesthetics — we work hard to create
+              all of this just for you.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature__works feature__works__container">
+      <div class="feature__works-header">
+        <h2>
+          Cant' decide on the design? Explore our
+          <span class="success">featured works:</span>
+        </h2>
+        <div class="header-description">
+          <p>
+            We offer both ready-made models of cottages and custom designs for
+            our clients.
+          </p>
+          <span class="success">More our works →</span>
+        </div>
+      </div>
+      <div class="feature__works__body">
+        <div class="feature__works__body-cards-left">
+          <picture>
+            <img src="./images/feature/feature1.png" alt="house" />
+          </picture>
+          <picture>
+            <img src="./images/feature/feature2.png" alt="house" />
+          </picture>
+          <picture>
+            <img src="./images/feature/feature3.png" alt="house" />
+          </picture>
+        </div>
+        <div class="feature__works__body-cards-midlle">
+          <picture>
+            <img src="./images/feature/feature3.png" alt="house" />
+          </picture>
+          <picture>
+            <img src="./images/feature/feature6.png" alt="house" />
+          </picture>
+        </div>
+        <div class="feature__works__body-cards-right">
+          <picture>
+            <img src="./images/feature/feature4.png" alt="house" />
+          </picture>
+          <picture>
+            <img src="./images/feature/feature5.png" alt="house" />
+          </picture>
+          <picture>
+            <img src="./images/feature/feature6.png" alt="house" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials testimonials__container">
+      <div class="swiper mySwiper" style="--swiper-navigation-size: 30px;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <img
+                src="./images/testimonial/testimonials1.png"
+                alt="testiomonial"
+              />
+            </picture>
+            <h2>Amanda Peterson</h2>
+            <p>
+              <em
+                >“ZEN Cottages created a perfect vacation house for us! It's a
+                place comfortable and spacious enough to invite friends over.
+                They deserve the highest grade!”</em
+              >
+            </p>
+            <p><span class="success">11 MARCH, 2021</span></p>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <img
+                src="./images/testimonial/testimonials2.png"
+                alt="testiomonial"
+              />
+            </picture>
+            <h2>Jeff Gordons</h2>
+            <p>
+              <em
+                >“We bought the Shast model because we wanted something simple
+                yet proven good. It was one of the best decisions for my family!
+                Thanks for our new favorite place to stay.”</em
+              >
+            </p>
+            <p><span class="success">13 JUNE, 2021</span></p>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <img
+                src="./images/testimonial/testimonials3.png"
+                alt="testiomonial"
+              />
+            </picture>
+            <h2>Elizabeth Smith</h2>
+            <p>
+              <em
+                >“My husband and I travel a lot, so we wanted something to make
+                our travels more comfortable. As it turned out, ZEN Cottages had
+                the right solution for us.”</em
+              >
+            </p>
+            <p><span class="success">21 OCTOBER, 2020</span></p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="blog__header">
+        <h2>
+          Dive into the world of architecture with
+          <span class="success">our blog:</span>
+        </h2>
+        <p>
+          Architecture and interior design are our passions! In our blog, we
+          write a lot about design options, styles, high-quality materials, and
+          present our new projects sometimes.
+        </p>
+      </div>
+      <div class="blog__body">
+        <div class="blog__body-tips">
+          <h4 class="success">#TIPS</h4>
+          <p>How to create the right brief?</p>
+          <p><span>September 22, 2021 | Sam Smith</span></p>
+        </div>
+        <div class="blog__body-news">
+          <article>
+            <picture>
+              <img src="./images/news/news1.png" alt="" />
+            </picture>
+            <h5 class="success">#NEWS</h5>
+            <h2>New custom model: Grace</h2>
+            <p>
+              If you feel like you need something special, we might have the
+              right option for you. Our new custom model called Grace will
+              suit...
+            </p>
+            <p><small> 02. 2021 | Sam Smith</small></p>
+            <p>
+              <a href="/index.html">Read more <span class="success">→</span></a>
+            </p>
+          </article>
+          <article>
+            <picture>
+              <img src="./images/news/news2.png" alt="" />
+            </picture>
+            <h5 class="success">#IDEAS</h5>
+            <h2>Top 5 cottage decor ideas</h2>
+            <p>
+              What makes a home feel like home? Most often it's home decor. If
+              you have no idea how to design your existing or future...
+            </p>
+            <p><small>July 22. 2021 | Sam Smith</small></p>
+            <p>
+              <a href="/index.html">Read more <span class="success">→</span></a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <h2 class="success">zencottage@email.com</h2>
+      <a href="tel:+12345678900">Phone number: +1 (234) 567 89 00</a>
+    </section>
+
+    <footer id="footer" class="footer footer__container">
+      <div class="footer__wrapper">
+        <div class="footer__wrapper-logo">
+          <a href="/index.html"> <img src="./images/logo1.svg" alt="" /> </a>
+          <p>
+            Our company respects the natural environment and deeply cares about
+            it. Therefore, we do our best to use building constructions and
+            delivery systems that are flexible and have minimal impact on the
+            land they occupy.
+          </p>
+          <div class="footer__wrapper-logo-socials">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="bi bi-facebook success"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="bi bi-instagram success"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank"
+                  ><i class="bi bi-twitter success"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><i class="bi bi-youtube success"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__wrapper-nav">
+          <h3 class="success">NAVIGATION</h3>
+          <ul>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#cottages">Cottages</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__wrapper-contacts">
+          <h3 class="success">CONTACTS</h3>
+          <ul>
+            <li>
+              <p>35-35 94th St, Flushing, NY 11372, USA</p>
+            </li>
+            <li>
+              <p>Monday - Saturday: 11 AM - 9 PM</p>
+              <p>Sunday: 11 AM - 7 PM</p>
+            </li>
+            <li>
+              <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+              <a href="mailto:supportzencottages@email.com"
+                >supportzencottages@email.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          <small>
+            © Created by
+            <a href="https://github.com/MrAndriy" target="_blankƒ">Mr_Andriy</a>
+          </small>
+        </p>
+        <p><small>All rights Reserved</small></p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="success"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="success">
+              Contact us
+            </h5>
+
+            <form
+              class="my-form"
+              action="https://formspree.io/f/mjvldoer"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name*"
+                required
+              />
+
+              <input
+                type="tel"
+                name="tel"
+                placeholder="Phone number*"
+                required
+              />
+
+              <input type="email" name="email" placeholder="Email*" required />
+
+              <textarea
+                cols="3"
+                rows="5"
+                type="text"
+                name="message"
+                placeholder="Your Message*"
+              ></textarea>
+              <p class="my-form-status"></p>
+              <button id="my-form-button" class="btn-primary">
+                Request a quote
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Scripts-->
+    <script src="index.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        zoom: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

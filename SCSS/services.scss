@@ -1,0 +1,132 @@
+@import 'config';
+
+.services {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+
+  &__type {
+    display: grid;
+    grid-row: auto;
+    padding: 30px 24px;
+
+    & .service {
+      margin: 30px 0;
+      & img {
+        height: 375px;
+        width: 100%;
+      }
+
+      & h3 {
+        font-size: 23px;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  &__info {
+    padding: 70px 24px 80px;
+
+    &-building {
+      & h2 {
+        font-weight: 400;
+        margin: 15px 0;
+        font-size: 24px;
+        font-family: 'Popping', sans-serif;
+      }
+
+      & article {
+        margin-top: 50px;
+
+        & p {
+          &:first-child {
+            color: $color-white;
+            font-size: 15px;
+          }
+
+          &:last-child {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-background {
+    padding-top: 350px;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/services__info.png');
+    background-position: 52.19% 55.86%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(57, 60, 66);
+    transform: scale(-1, 1);
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    &__container {
+      border-top: 1px solid $color-primary;
+    }
+
+    &__type {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      border-bottom: 1px solid $color-primary;
+    }
+
+    &__info {
+      &-building {
+        display: flex;
+        align-items: flex-start;
+
+        & h2 {
+          font-size: 27px;
+        }
+
+        & article {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &-background {
+      padding-top: 530px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .services {
+    &__type {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      & .service {
+        margin: 30px 0;
+        & img {
+          height: 250px;
+          width: 100%;
+        }
+
+        & h3 {
+          font-size: 23px;
+          margin: 15px 0;
+        }
+      }
+    }
+
+    &__info {
+      &-building {
+        & h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

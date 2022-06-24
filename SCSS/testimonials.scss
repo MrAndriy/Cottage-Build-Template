@@ -1,0 +1,61 @@
+@import 'config';
+
+.testimonials {
+  &__container {
+    padding: 80px 24px;
+  }
+
+  & .swiper {
+    & .swiper-wrapper .swiper-slide {
+      text-align: center;
+      padding: 33px 20px;
+      background: $color-bg2;
+      height: 100%;
+      border-radius: 30px;
+
+      & picture img {
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+      }
+
+      & *:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      & p:last-child {
+        font-size: 14px;
+      }
+    }
+
+    & .swiper-button-prev,
+    .swiper-button-next {
+      color: $color-success;
+    }
+
+    & .swiper-button-prev {
+      left: 0;
+    }
+
+    & .swiper-button-next {
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials {
+    & .swiper {
+      & .swiper-wrapper .swiper-slide {
+        & h2 {
+          font-size: 23px;
+        }
+
+        & picture img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}

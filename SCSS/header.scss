@@ -1,0 +1,58 @@
+@import 'config';
+
+.header {
+  &__container {
+    background: url(../images/cover.png) 0% 49.04% / cover no-repeat,
+      rgb(57, 60, 66);
+  }
+
+  &__content {
+    padding: 0 24px;
+    margin: 0 auto;
+
+    & h1 {
+      font-size: 46px;
+    }
+
+    & p {
+      margin-top: 35px;
+      font-size: 19px;
+      color: $color-secondary;
+    }
+
+    & button {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .header {
+    &__content {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+  }
+}
+
+@media (min-width: 765px) {
+  .header {
+    &__content {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &__content {
+      padding-top: 270px;
+      padding-bottom: 270px;
+
+      & h1 {
+        font-size: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import 'config';
+@import url('./navbar.css');
+@import url('./header.css');
+@import url('./about-us.css');
+@import url('./services.css');
+@import url('./cottages.css');
+@import url('./consultation.css');
+@import url('./team.css');
+@import url('./form.css');
+@import url('./choose-us.css');
+@import url('./feature.css');
+@import url('./testimonials.css');
+@import url('./blog.css');
+@import url('./contacts.css');
+@import url('./footer.css');
+@import url('./modal.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  user-select: none;
+  overflow-x: hidden;
+  color: $color-white !important;
+  background: $color-bg !important;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $color-white;
+  line-height: 1.2;
+}
+
+p {
+  color: $color-primary;
+  font-size: 17px;
+}
+
+a {
+  color: $color-secondary;
+}
+
+small {
+  color: $color-white;
+}
+
+a:hover {
+  color: $color-white;
+  transition: $transition;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.success {
+  color: $color-success;
+}
+
+.white {
+  color: $color-white;
+}
+
+@import 'utilities';
+@import 'buttons';

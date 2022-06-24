@@ -1,0 +1,64 @@
+.burger {
+  display: block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+
+  &.active {
+    .line-main::before {
+      transform: rotate(45deg);
+    }
+
+    .line-main::after {
+      transform: rotate(-45deg);
+    }
+
+    .line-split::before {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+
+    .line-split::after {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+  }
+
+  .line {
+    position: absolute;
+    width: 20px;
+
+    &-main::before,
+    &-main::after,
+    &-split::before,
+    &-split::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.5s;
+    }
+
+    &-main::before {
+      transform: translateY(-7px);
+    }
+
+    &-main::after {
+      transform: translateY(7px);
+    }
+
+    &-split::before,
+    &-split::after {
+      width: 10px;
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+    &-split::after {
+      transform: translateX(10px);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import 'config';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px 30px 30px;
+  word-wrap: break-word;
+
+  & h2 {
+    font-size: 36px;
+  }
+
+  & a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    & h2 {
+      font-size: 26px;
+    }
+  }
+}

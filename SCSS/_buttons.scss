@@ -1,0 +1,26 @@
+%btn {
+  //this is shared btn
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 15px 35px;
+  transition: $transition;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  color: $color-black;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-white;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background: $color-success;
+}
+
+.btn-secondary {
+  @extend %btn;
+  background: $color-black;
+}

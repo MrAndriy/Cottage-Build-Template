@@ -1,0 +1,141 @@
+@import 'config';
+
+.blog {
+  border-top: 1px solid $color-primary;
+
+  &__header {
+    border-bottom: 1px solid $color-primary;
+    padding: 70px 0px 40px;
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+      padding: 0 30px;
+      font-size: 26px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    & p {
+      padding: 0 30px;
+      margin-top: 60px;
+      color: $color-secondary;
+    }
+  }
+
+  &__body {
+    border-bottom: 1px solid $color-primary;
+    padding: 45px 24px 80px;
+    display: flex;
+    flex-direction: column;
+
+    &-tips {
+      background: url('../images/news/news-bg.png') 38.28% 100% / cover
+        no-repeat;
+      padding: 0 15px;
+      min-width: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      & h4 {
+        margin-top: 200px;
+      }
+
+      & p {
+        margin-top: 20px;
+        font-size: 22px;
+        color: $color-white;
+
+        & span {
+          color: $color-secondary;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-news {
+      display: flex;
+      flex-direction: column;
+
+      & article {
+        margin-top: 30px;
+
+        & picture {
+          display: block;
+          position: relative;
+          padding-top: 68.38%;
+
+          & img {
+            min-height: 32px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            height: 100%;
+          }
+        }
+
+        & h5,
+        h2,
+        p {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .blog {
+    &__header {
+      flex-direction: row;
+
+      & h2 {
+        font-size: 37px;
+      }
+      & p {
+        padding: 0 15px;
+        margin: auto 0;
+        font-size: 19px;
+      }
+    }
+    &__body {
+      &-tips {
+        & h4 {
+          margin-top: 307px;
+        }
+      }
+      &-news {
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog {
+    &__body {
+      flex-direction: row;
+      gap: 30px;
+
+      &-news {
+        margin: 0;
+
+        & article {
+          margin: 0;
+
+          & picture {
+            padding-top: 68.38%;
+          }
+
+          & h2 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

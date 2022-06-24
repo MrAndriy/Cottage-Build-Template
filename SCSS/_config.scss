@@ -1,0 +1,25 @@
+$color-bg: #23262e;
+$color-bg2: #272931;
+$color-success: #cee002;
+$color-primary: #848484;
+$color-secondary: #bababa;
+$color-white: #ffff;
+$color-black: #000000;
+
+$box-shadow: 0 2rem 3rem $color-secondary;
+$transition: all 400ms ease;
+
+// Set text color based on bg
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

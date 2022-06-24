@@ -1,0 +1,51 @@
+@import 'config';
+
+.modal-dialog .modal {
+  &-content {
+    background: $color-bg2;
+  }
+
+  &-header {
+    border: none;
+    justify-content: end;
+
+    & button {
+      background: inherit;
+    }
+  }
+
+  &-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    & h5 {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 45px;
+
+      & input {
+        color: $color-white;
+        background: rgb(42, 45, 52);
+        padding: 15px 26px;
+        margin-top: 15px;
+      }
+
+      & textarea {
+        color: $color-white;
+        background: rgb(42, 45, 52);
+        padding: 15px 26px;
+        margin-top: 15px;
+      }
+
+      & button {
+        margin-top: 60px;
+      }
+    }
+  }
+}

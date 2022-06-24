@@ -1,0 +1,165 @@
+@import 'config';
+
+.feature__works {
+  &__container {
+    padding: 70px 30px 80px;
+    border-bottom: 1px solid $color-bg2;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & h2 {
+      font-size: 26px;
+    }
+
+    & .header-description {
+      & p {
+        margin: 60px 0 25px;
+        font-size: 19px;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+
+    &-cards-left,
+    &-cards-right,
+    &-cards-midlle {
+      width: 100%;
+
+      & picture {
+        display: block;
+        position: relative;
+        padding-top: 75%;
+
+        & img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+
+      & picture:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-cards-midlle {
+      display: none;
+    }
+
+    &-cards-left {
+      picture:nth-child(2) {
+        padding-top: 119%;
+      }
+
+      picture:nth-child(3) {
+        padding-top: 87.03%;
+      }
+    }
+
+    &-cards-right {
+      picture:nth-child(1) {
+        padding-top: 101%;
+      }
+
+      picture:nth-child(2) {
+        padding-top: 112%;
+      }
+
+      picture:nth-child(3) {
+        padding-top: 69.46%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .feature__works {
+    &-header {
+      flex-direction: row;
+
+      & h2 {
+        font-size: 37px;
+        line-height: 1.5;
+      }
+
+      & .header-description {
+        & p {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__body {
+      gap: 30px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature__works {
+    &__body {
+      margin-top: 75px;
+
+      &-cards-midlle {
+        display: block;
+      }
+
+      &-cards-left {
+        & picture:nth-child(1) {
+          padding-top: 75.95%;
+          margin-bottom: 30px;
+        }
+
+        & picture:nth-child(2) {
+          padding-top: 112.7%;
+          margin: 0;
+        }
+
+        & picture:nth-child(3) {
+          display: none;
+        }
+      }
+
+      &-cards-midlle {
+        & picture:nth-child(1) {
+          padding-top: 101.35%;
+          margin-bottom: 30px;
+        }
+
+        & picture:nth-child(2) {
+          padding-top: 87.03%;
+          margin: 0;
+        }
+      }
+
+      &-cards-right {
+        & picture:nth-child(1) {
+          padding-top: 119.19%;
+          margin-bottom: 30px;
+        }
+
+        & picture:nth-child(2) {
+          padding-top: 69.46%;
+          margin: 0;
+        }
+
+        & picture:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
